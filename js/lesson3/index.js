@@ -25,3 +25,16 @@ if (Number % 3 == 0 && Number % 5 == 0) {
 } else {
   console.log("3ga, 5ga bulinmeydi");
 }
+
+//3-masala
+
+let login = 'student';
+let parol = '1995'
+
+if (login === 'student' && parol === '195') {
+    console.log('xush kelibsiz');
+}else {
+    console.log('login yoki parol xato');
+}
+
+// 4-masala
