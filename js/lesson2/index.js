@@ -1,34 +1,26 @@
 // 1-masala
-// let num = '10';
-// // num = '10' && console.log('juft son');
-// num != '9' && console.log('toq son');
+let num = 9;
+num % 2 === 0 && console.log('juft son');
+num % 2 !==0 && console.log('toq son');
 
 // 3-masala
 
-// let meva = 'olma'
-// meva = 'olma' && console.log(10000);
+let meva = 'baqalajon'
+meva === 'olma' && console.log(10000);
 
-// let meva = 'nok'
-// meva = 'nok' && console.log(12000);
+meva === 'nok' && console.log(12000);
 
-// let meva = 'tarvuz'
-// meva = 'tarvuz' && console.log(20000);
+meva === 'tarvuz' && console.log(20000);
 
-// let meva = 'pomidor'
-// meva != 'baqalajon' && console.log('unday meva yoq'); 
+meva !== 'olma' && meva !== 'nok' && meva !== 'tarvuz' && console.log('bunday meva yoqku'); 
 
 // 2-masala
 
-// let ball = '100<= A >=86'
-// ball = '100<=A>=86' && console.log('A');
+let ball = 98
+ball >= 86 && ball <= 100 && console.log('A');
+ball >= 71 && ball <= 85 && console.log('B');
+ball >= 56 && ball <= 70 && console.log('C');
+ball < 55 &&  console.log('failed');
 
-// let ball = '85 ~ 71'
-// ball = '85 ~ 71' && console.log('B');
-
-// let ball = '71 ~ 56'
-// ball = '71 ~ 56' && console.log('C');
-
-// let ball = '55 ~ 0'
-// ball = '56 ~ 0>' && console.log('faild');
 
 // 4-masala
