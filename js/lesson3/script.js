@@ -82,7 +82,11 @@
 // let num = 10;
 // num % 2 === 0 ? console.log('juft son') : console.log('toq son');
 
-let age = 8;
+// let age = 8;
 
-let citizen = age >= 18 ? 'ovoz bera oladi' : 'ovoz bera olmaydi'
-console.log(citizen);
+// let citizen = age >= 18 ? 'ovoz bera oladi' : 'ovoz bera olmaydi'
+// console.log(citizen);
+
+if (-1 || 0) console.log('first');
+if (-1 && 0) console.log('second');
+if (null || -1 && 1) console.log('thirt');

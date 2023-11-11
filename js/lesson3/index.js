@@ -28,13 +28,38 @@ if (Number % 3 == 0 && Number % 5 == 0) {
 
 //3-masala
 
-let login = 'student';
-let parol = '1995'
+let login = "student";
+let parol = "1995";
 
-if (login === 'student' && parol === '195') {
-    console.log('xush kelibsiz');
-}else {
-    console.log('login yoki parol xato');
+if (login === "student" && parol === "195") {
+  console.log("xush kelibsiz");
+} else {
+  console.log("login yoki parol xato");
 }
 
 // 4-masala
+
+let num = 10;
+
+num % 2 === 0 ? console.log("juft son") : console.log("toq son");
+
+// 5-masala
+
+function balltopishSistema(ball) {
+  if (ball >= 86 && ball <= 100) {
+      return 'A';
+  } else if (ball >= 71 && ball <= 85) {
+      return 'B';
+  } else if (ball >= 56 && ball <= 70) {
+      return 'C';
+  } else if (ball >= 0 && ball <= 55) {
+      return 'Faild';
+  } else {
+      return 'Noto\'g\'ri ball kiritdingiz.';
+  }
+}
+
+// Misol:
+var ball = 55;
+var natija = balltopishSistema(ball);
+console.log('Natija:', natija);
