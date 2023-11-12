@@ -58,7 +58,6 @@ function balltopishSistema(ball) {
       return 'Noto\'g\'ri ball kiritdingiz.';
   }
 }
-
 // Misol:
 var ball = 55;
 var natija = balltopishSistema(ball);
