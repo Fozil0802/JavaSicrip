@@ -47,18 +47,38 @@ num % 2 === 0 ? console.log("juft son") : console.log("toq son");
 
 function balltopishSistema(ball) {
   if (ball >= 86 && ball <= 100) {
-      return 'A';
+    return "A";
   } else if (ball >= 71 && ball <= 85) {
-      return 'B';
+    return "B";
   } else if (ball >= 56 && ball <= 70) {
-      return 'C';
+    return "C";
   } else if (ball >= 0 && ball <= 55) {
-      return 'Faild';
+    return "Faild";
   } else {
-      return 'Noto\'g\'ri ball kiritdingiz.';
+    return "Noto'g'ri ball kiritdingiz.";
   }
 }
 // Misol:
 var ball = 55;
 var natija = balltopishSistema(ball);
-console.log('Natija:', natija);
+console.log("Natija:", natija);
+
+// 6-masala
+let message = "Employe";
+
+message === "Employe" ? console.log("hello") : console.log("");
+message === "Director" ? console.log(Greetings) : console.log("");
+message === "" ? console.log("No login") : console.log("");
+
+// 7-masala
+
+let brow = "Chrome";
+
+if (brow == 'Edge') {
+  console.log("You have got the Edge");
+} else if(brow == 'Chrome'){
+  console.log('Okay we support these browers too');
+}
+else {
+  console.log("We hope that this page look ok!");
+}
