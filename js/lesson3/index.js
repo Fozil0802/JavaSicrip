@@ -64,11 +64,11 @@ var natija = balltopishSistema(ball);
 console.log("Natija:", natija);
 
 // 6-masala
-let message = "Employe";
+let login1 = "Employe";
 
-message === "Employe" ? console.log("hello") : console.log("");
-message === "Director" ? console.log(Greetings) : console.log("");
-message === "" ? console.log("No login") : console.log("");
+login1 === "Employe" ? console.log("hello") : console.log("");
+login1 === "Director" ? console.log(Greetings) : console.log("");
+login1 === "" ? console.log("No login") : console.log("");
 
 // 7-masala
 
