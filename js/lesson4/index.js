@@ -3,6 +3,8 @@
 let str = "fozil";
 let str2 = "";
 for (let i = str.length - 1; i >= 0; i--) {
+
+  
   // console.log(str[i]);
   str2 = str2 + str[i];
 }

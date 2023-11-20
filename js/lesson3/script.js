@@ -87,6 +87,6 @@
 // let citizen = age >= 18 ? 'ovoz bera oladi' : 'ovoz bera olmaydi'
 // console.log(citizen);
 
-if (-1 || 0) console.log('first');
-if (-1 && 0) console.log('second');
-if (null || -1 && 1) console.log('thirt');
+// if (-1 || 0) console.log('first');
+// if (-1 && 0) console.log('second');
+// if (null || -1 && 1) console.log('thirt');

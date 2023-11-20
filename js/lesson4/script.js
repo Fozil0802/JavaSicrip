@@ -82,14 +82,14 @@
 
 // salom=> molas
 // let str = 'salom'
-//  for(let i = str.length; 1>=0; i++){
+//  for(let i = str.length; 1>=0; i--){
 //     console.log(str[i]);
 //  }
 //  natija;
 //  undefined m o l a s
 
 // let str = 'salom'
-//  for(let i = str.length -1; 1>=0; i++){
+//  for(let i = str.length -1; 1>=0; i--){
 //     console.log(str[i]);
 //  }
 //  natija; m o l a s
