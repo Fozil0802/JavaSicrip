@@ -9,8 +9,16 @@
 // const data1 = undefined ?? 'malumot kelmadi';
 // const data2 = null ?? 'malumot kelmadi';
 // const data3 = undefined ?? {};
+// let name = false
 
-// console.log(data3);
+
+// let result = name ?? 'sirojiddin';
+
+
+// console.log(result);
+
+// let num = undefined ? 'fozil' : 'maluot yoq'
+// console.log(num);
 
 // for loop qayta qayta ko'dni yozish uchun kerak
 

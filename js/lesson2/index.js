@@ -23,6 +23,5 @@ ball >= 56 && ball <= 70 && console.log('C');
 ball < 55 &&  console.log('failed');
 
 
-// 4-masala
 
 
