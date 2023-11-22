@@ -88,3 +88,4 @@ let c1 = (a10**2 + b5**2)**(1/2);
 let P3 = a10 + b5 + c1;
 console.log(c1);
 console.log(P3);
+
