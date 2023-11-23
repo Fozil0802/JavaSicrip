@@ -46,3 +46,7 @@ for (let i = 0; i < str4.length; i++) {
   }
 }
 console.log(result1);
+
+console.log(str4.match(/[A-Z]/g).join(''));
+console.log(str4.match(/[a-z]/g).join(''));
+// console.log(str4.match(/[0-9]/g).join(''));
