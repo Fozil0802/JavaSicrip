@@ -27,7 +27,7 @@
 // `` (backtick) => asosiy xususiyat uzgaruvchi qiymatiga kira olamiz, ES6 da qusgilgan
 // \n => new line 
 // \t => tab joy tashaydi
-//  \r => rigiht
+//  \r => right
 
 // index => turgan joyi, 0 dan boshlanadi
 // lenght => uzunlik 1dan boshlanadi
@@ -38,7 +38,7 @@
 // console.log(str.slice(2, 5));
 // console.log(str.substring(3, 6));
 
-let str = 'FOzil'
+let str = 'FOzily'
 let str1 = 'shavkatovich'
 console.log(str.toLocaleUpperCase());
 console.log(str.toLocaleLowerCase());
@@ -49,6 +49,8 @@ console.log(str.padEnd(10, '.'));
 console.log(str.replace('FOzil', 'shavkatovich'));
 console.log(str.repeat(5));
 console.log(str.concat(str1, 'Khudoyberdiev'));
+  
 console.log(str.includes('zil'));
 console.log(str.indexOf('z'));
 console.log(str.lastIndexOf('z'));
+console.log(str.trim());
