@@ -4,14 +4,21 @@ let user = {
   surname: "Smith",
 };
 
-ser.name = "Pete";
+user.name = "Pete";
 delete user.name;
 console.log(user);
 
 // 2-masala
-// let schedule = {};
+let schedule = {};
 
-// console.log(schedule());
+function isEmpty(schedule){
+  for(let key in schedule){
+    return false
+  } 
+  return true
+}
+
+console.log(isEmpty(schedule));
 
 // 3-masala
 
@@ -20,14 +27,26 @@ let salaries = {
   Ann: 160,
   Pete: 130,
 };
-console.log("salaries");
+let sum = 0;
+for(let key in salaries){
+  sum += salaries[key]
+}
+console.log(sum);
 
-// 4-masala
+// // 4-masala
 
 let menu = {
   width: 200,
   height: 300,
   title: "My menu",
 };
-multiplyNumeric(menu);
+function multiply(obj){
+  for(let key in obj){
+    if(typeof obj[key] === 'number'){
+      obj[key] *= 2
+    }
+  }
+}
+multiply(menu);
+console.log(menu);
 
