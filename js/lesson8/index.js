@@ -9,10 +9,10 @@ delete user.name;
 console.log(user);
 
 // 2-masala
-let schedule = {};
+let schedule = {name:'fozil'};
 
-function isEmpty(schedule){
-  for(let key in schedule){
+function isEmpty(obj){
+  for(let key in obj){
     return false
   } 
   return true
