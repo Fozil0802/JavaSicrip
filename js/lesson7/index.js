@@ -1,12 +1,13 @@
 //  1-masla
 
-let str = "FozilL";
+let str = "Fozil";
 // // 2-usul
 
-let newstr = str.toUpperCase();
-console.log(newstr[newstr.length - 1] == "L");
+// let newstr = str.trim().toUpperCase();
+console.log(str[str.trim().length - 1] == "L");
 
-console.log(newstr[newstr.length - 1] == "l");
+console.log(str[str.trim().length - 1] == "l");
+
 console.log();
 
 // // 1-usul
@@ -33,12 +34,15 @@ if (yil % 4 === 0) {
 // 4-masala
 
 let text = "#fozil#web#brain#";
-let replacedText = text
-  .replace("#", "(")
-  .replace("#", ")")
-  .replace("#", "(")
-  .replace("#", ")");
-console.log(replacedText);
+
+console.log(text.replace(/#/g, '('));
+
+// let replacedText = text
+//   .replace("#", "(")
+//   .replace("#", ")")
+//   .replace("#", "(")
+//   .replace("#", ")");
+// console.log(replacedText);
 
 // 6-masala
 let str3 = "Web";
@@ -51,9 +55,13 @@ str5 = result;
 
 // Natijani chiqarish
 console.log(str3); // 'brain'
-console.log("str5:", str5); // 'web'
+console.log(str5); // 'web'
 
 // str3 ning qiymati result o'zgaruvchisiga saqlanadi.
 // str3 ning qiymati str5 ga o'zgartiriladi.
 // str5 ning qiymati esa avvalgi str3 ning qiymati (result) ga o'zgartiriladi.
 // Natijada, str3 ning qiymati 'brain' bo'ladi, va str5ning qiymati 'web' bo'ladi.
+
+
+
+
