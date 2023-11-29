@@ -1,5 +1,6 @@
 // console.log(Math.pow(3, 3)); sonni darajaga ko'taradi 
 
+
 // console.log(Math.sqrt(36)); ildiz chiqaradi
 
 // console.log(Math.cbrt(64));kub ildiz ichidan chiqaradi
