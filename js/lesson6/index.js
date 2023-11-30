@@ -3,7 +3,7 @@
 function fozilpow(son, daraja) {
   return son ** daraja;
 }
-console.log(fozilpow(5, 3));
+console.log(fozilpow(5, 4));
 
 // 2masala
 
@@ -40,12 +40,19 @@ fozilround(6.8);
 
 // 6-masala
 function fozilfloor(son){
-    son >= parseInt(son) && console.log(parseInt(son));
-    son < parseInt(son) && console.log(parseInt(son));
+    // son >= parseInt(son) && console.log(parseInt(son));
+    // son < parseInt(son) && console.log(parseInt(son));
+   return son % 2 !== 0 && parseInt(son);
 }
-fozilfloor(5.9)
+console.log(fozilfloor(5.5));
 
+// 7-masala
 
+// console.log(Math.cbrt(64));
 
+function fozilcbrt(son){
+ return son**(1/3)
+}
+console.log(+fozilcbrt(64).toFixed());
 
 
