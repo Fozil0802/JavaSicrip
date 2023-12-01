@@ -11,12 +11,20 @@ let cars = [
 // let filtering = cars.filter(value => value.year > 2010)
 // let sorting = cars.sort((a,b) => a.engine -b.engine)
 // let sorting = cars.sort((a,b) => a.year -b.year)
-// let sorting = cars.sort((a,b) => a.name.localCompare(b.name))
-let filtering = cars.filter(value => value.year > 2010)
-let mapping = filtering.map((value) => {
-  return {...value, status: "Eski" };
-});
-console.log(mapping);
+// let sorting = cars.sort((a,b) => a.name.localeCompare(b.name))
+// let filtering = cars.filter(value => value.year > 2010)
+// let mapping = filtering.map((value) => {
+//   return {...value, status: "Eski" };
+// });
+// console.log(mapping);
+
+const onDelete = (ids) => {
+  let filtered = cars.filter((value) => value.id !== ids);
+//   cars = filtered;
+console.log(filtered);
+};
 
 // console.log(filtering);
 // console.log(sorting);
+onDelete(5)
+// console.log(cars);

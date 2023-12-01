@@ -54,7 +54,7 @@
 // forEach=> qiymat update qila olmaymiz, va return ga qaytmaydi
 
 // let arr = [23, 78, 95, 30, 100];
-// let filtered = arr.filter((value, index) => value > 50) 
+// let filtered = arr.filter((value, index) => value > 50)
 // let filtered = arr.filter((value, index) => value !== 100)
 
 // arr.map((value) => {
@@ -63,7 +63,22 @@
 //   }
 // });
 
-// let arr = ['Fozil', 'Okhunjon', 'Jaloliddin', 'Utkirbek']
-// // let filtered = arr.filter((value) => value === 'Fozil') 
-// let filtered = arr.filter((value) => value !== 'Fozil') 
+// let arr = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
+// // let filtered = arr.filter((value) => value === 'Fozil')
+// let filtered = arr.filter((value) => value !== 'Fozil')
 // console.log(filtered);
+
+// let finding = arr.findIndex((value) => value === "Fozil") nechanchi index?
+// console.log(finding);
+
+// let arr = [55, 67, 23, 34];
+// let sorting = cars.sort((a,b) => a.year -b.year)
+// let check = arr.every((value) => value > 25) 
+// let check = arr.some((value) => value > 65) 
+// let filling = arr.fill('77')
+
+// console.log(check);
+
+
+
+

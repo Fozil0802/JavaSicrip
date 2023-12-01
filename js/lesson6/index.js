@@ -23,20 +23,18 @@ fozilabs(22);
 // 4-masala
 
 function fozilceil(son) {
-  //   son > parseInt(son) && console.log((son) + 1);
-  //   son == parseInt(son) && console.log(son);
-  son % 2 === 0 && console.log(son);
-  son % 2 !== 0 && console.log(son + 1);
+    son > parseInt(son) && console.log((son) + 1);
+    son == parseInt(son) && console.log(son);
 }
-fozilceil(10);
+fozilceil(10.5);
 
 // // 5-masala
 
 function fozilround(son) {
-  son >= parseInt(son) && console.log(parseInt(son) + 1); 
+  son >= parseInt(son) + 0.5  && console.log(parseInt(son) + 1);
   son < parseInt(son) + 0.5 && console.log(parseInt(son));
 }
-fozilround(6.8);
+fozilround(6.1);
 
 // 6-masala
 function fozilfloor(son){
@@ -55,4 +53,8 @@ function fozilcbrt(son){
 }
 console.log(+fozilcbrt(64).toFixed());
 
-
+// function myMathround(son) {
+//   son >= parsenInt(son) + 0.5 && console.log(parseInt(son) + 1);
+//   son < parseInt(son) + 0.5 && console.log(parseInt(son));
+// }
+// myMathround(5.5);
