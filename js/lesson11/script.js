@@ -79,6 +79,17 @@
 
 // console.log(check);
 
+let str = '5555';
+// termilaida 20
+// let sum = 0;
 
+// for(let i = 0; i < str.length; i++){
+// // console.log(str[i]);
+// sum += +str[i]
+// }
+// console.log(sum);
 
-
+let arr =  str.split('');
+let sum = arr.reduce((initial, total) => initial + total, 0)
+console.log(arr);
+      
