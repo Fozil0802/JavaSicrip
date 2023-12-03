@@ -1,4 +1,3 @@
-
 // 1-masala
 
 let obj1 = {
@@ -27,7 +26,7 @@ let obj = {
   name: "WebBrain",
   offline: true,
   online: true,
-  individual: false
+  individual: false,
 };
 
 // Obyektning faqat boolean tipidagi maydonlarini ajratib olamiz
@@ -74,11 +73,11 @@ console.log(sum);
 
 let person1 = {
   id: 1,
-  name: 'Umar',
-  surname: 'Ismoilov',
-  ielts: 5.5,
+  name: "Umar",
+  surname: "Khudoyberdiev",
+  ielts: 6,
   student: true,
-  parol: 101
+  parol: 2006,
 };
 
 function Kirish(parol, name) {
@@ -88,9 +87,9 @@ function Kirish(parol, name) {
 
   // Togri kirish tekshirish
   if (parol === bazadagiParol && name === bazadagiName) {
-      console.log('Hush kelibsiz!');
+    console.log("Hush kelibsiz!");
   } else {
-      console.log('Parol yoki ism xato');
+    console.log("Parol yoki ism xato");
   }
 }
 Kirish();

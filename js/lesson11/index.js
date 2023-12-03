@@ -28,3 +28,9 @@ console.log(filtered);
 // console.log(sorting);
 onDelete(5)
 // console.log(cars);
+
+let arr = [25, 30, 70, 85, 40, 5, 95];
+
+let min = arr.sort((a, b) => a - b)[0];
+let max = arr.sort((a,b) => a - b).slice(-1);
+console.log(min);
