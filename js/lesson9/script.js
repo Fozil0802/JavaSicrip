@@ -71,7 +71,7 @@ const employee = {
   occuption: "Programmer",
   age: 25,
 };
-const {id, name, occuption, age} = employee;
+const {id1, name1, occuption1, age1} = employee;
 console.log(id, name, occuption, age);
 console.log(id);
 console.log(name);
