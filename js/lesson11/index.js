@@ -36,3 +36,8 @@ let max = arr.sort((a,b) => a - b).slice(-1);
 console.log(min);
 
 let obj = "min"
+
+let arr1 = [1, [3, [5]],[10]];
+let flatting = arr1.flat(Infinity);
+let sum = flatting.reduce((initial, total) => initial + +total, 0)
+console.log(sum);

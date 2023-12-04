@@ -92,10 +92,10 @@ let arr = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
 // let arr =  str.split('');
 // console.log(sum);
 
-// let arr = [2, [3, [1, [5], [7]]], [8]];
-// let flatting = arr.flat(Infinity);
-// let sum = flatting.reduce((initial, total) => initial + +total, 0)
-// console.log(sum);
+let arr1 = [2, [3, [1, [5], [7]]], [8]];
+let flatting = arr1.flat(Infinity);
+let sum = flatting.reduce((initial, total) => initial + +total, 0)
+console.log(sum);
 
 // let spreading = [...arr, "java"];
 // console.log(spreading);
@@ -103,15 +103,15 @@ let arr = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
 // const [bir, ikki, uch] = arr;
 // console.log(bir);
 
-let cars = [
-  { id: 1, year: 1998, engine: 1, name: "Tico" },
-  { id: 2, year: 2005, engine: 1.2, name: "Matis" },
-  { id: 3, year: 2010, engine: 1.6, name: "Gentra" },
-  { id: 4, year: 2010, engine: 1.5, name: "Cobalt" },
-  { id: 5, year: 2012, engine: 2, name: "Malibu" },
-  { id: 6, year: 2000, engine: 1.2, name: "Damas" },
-  { id: 7, year: 2018, engine: 2.4, name: "Tracker" },
-];
+// let cars = [
+//   { id: 1, year: 1998, engine: 1, name: "Tico" },
+//   { id: 2, year: 2005, engine: 1.2, name: "Matis" },
+//   { id: 3, year: 2010, engine: 1.6, name: "Gentra" },
+//   { id: 4, year: 2010, engine: 1.5, name: "Cobalt" },
+//   { id: 5, year: 2012, engine: 2, name: "Malibu" },
+//   { id: 6, year: 2000, engine: 1.2, name: "Damas" },
+//   { id: 7, year: 2018, engine: 2.4, name: "Tracker" },
+// ];
 
 // const addUser = (user) => {
 //   // console.log(user);
@@ -142,4 +142,4 @@ let cars = [
 // onUpdate({ id: 5, type: "year", value: "111111" });
 // console.log(cars);
 
-const onCreate = (cars) => {};
+// const onCreate = (cars) => {};
