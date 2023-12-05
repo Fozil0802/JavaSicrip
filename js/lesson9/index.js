@@ -17,7 +17,7 @@ let obj2 = {
 
 // console.log(obj2[key]);
 // console.log(key + ": " + obj2[key]);
-console.log(typeof "id: " + obj2.id);
+console.log("id: " + obj2.id);
 
 
 // 3-masala
