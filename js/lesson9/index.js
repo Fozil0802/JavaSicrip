@@ -6,7 +6,7 @@ let obj1 = {
 };
 
 for (let key in obj1) {
-  // console.log(key);
+  console.log(key);
 }
 
 // 2-masala
@@ -17,8 +17,8 @@ let obj2 = {
 
 // console.log(obj2[key]);
 // console.log(key + ": " + obj2[key]);
-console.log("id: " + obj2.id);
-console.log("No3: " + obj2.No3);
+console.log(typeof "id: " + obj2.id);
+
 
 // 3-masala
 let obj = {
