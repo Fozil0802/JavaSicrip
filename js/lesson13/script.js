@@ -48,7 +48,6 @@ myMap.set(true, "boolean");
 myMap.delete(1);
 // myMap.clear();
 
-
 console.log(myMap.get("1"));
 console.log(myMap.get(1));
 console.log(myMap.get(true));
@@ -57,4 +56,19 @@ console.log(myMap);
 console.log(myMap.size);
 
 // JSON =>JavaScript object notation
+
+const user = [
+  {
+    name: "Webbrain",
+  },
+  {
+    name: "Academy",
+  },
+];
+console.log(user[1].name);
+
+let test = {"name":"Webbrain","status":"Academy"};
+let objToJson = JSON.stringify(test);
+let jsonToObj = JSON.parse(objToJson)
+console.log(jsonToObj);
 
