@@ -1,3 +1,4 @@
+// 1-masala
 let cars = [
   { id: 1, year: 1998, engine: 1, name: "Tico" },
   { id: 2, year: 2005, engine: 1.2, name: "Matis" },
@@ -27,8 +28,9 @@ console.log(filtered);
 // console.log(filtering);
 // console.log(sorting);
 onDelete(5)
-// console.log(cars);
+// // console.log(cars);
 
+// 2-masala
 let arr = [25, 30, 70, 85, 40, 5, 95];
 
 let min = arr.sort((a, b) => a - b)[0];
@@ -36,8 +38,12 @@ let max = arr.sort((a,b) => a - b).slice(-1);
 console.log(min);
 
 let obj = "min"
+// 3-masala
 
 let arr1 = [1, [3, [5]],[10]];
 let flatting = arr1.flat(Infinity);
 let sum = flatting.reduce((initial, total) => initial + +total, 0)
 console.log(sum);
+
+// 3-masala
+

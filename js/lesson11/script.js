@@ -53,19 +53,19 @@
 
 // forEach=> qiymat update qila olmaymiz, va return ga qaytmaydi
 
-// let arr = [23, 78, 95, 30, 100];
+let arr = [23, 78, 95, 30, 100];
 // let filtered = arr.filter((value, index) => value > 50)
-// let filtered = arr.filter((value, index) => value !== 100)
+let filtered = arr.filter((value, index) => value !== 100)
 
-// arr.map((value) => {
-//   if (value < 50) {
-//     console.log(value);
-//   }
-// });
+arr.map((value) => {
+  if (value < 50) {
+    console.log(value);
+  }
+});
 
-let arr = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
-// // let filtered = arr.filter((value) => value === 'Fozil')
-// let filtered = arr.filter((value) => value !== 'Fozil')
+let arr2 = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
+// // let filtered = arr2.filter((value) => value === 'Fozil')
+// let filtered = arr2.filter((value) => value !== 'Fozil')
 // console.log(filtered);
 
 // let finding = arr.findIndex((value) => value === "Fozil") nechanchi index?
@@ -92,10 +92,10 @@ let arr = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
 // let arr =  str.split('');
 // console.log(sum);
 
-let arr1 = [2, [3, [1, [5], [7]]], [8]];
-let flatting = arr1.flat(Infinity);
-let sum = flatting.reduce((initial, total) => initial + +total, 0)
-console.log(sum);
+// let arr1 = [2, [3, [1, [5], [7]]], [8]];
+// let flatting = arr1.flat(Infinity);
+// let sum = flatting.reduce((initial, total) => initial + +total, 0)
+// console.log(sum);
 
 // let spreading = [...arr, "java"];
 // console.log(spreading);

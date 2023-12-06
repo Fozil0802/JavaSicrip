@@ -19,4 +19,10 @@ const onSearch = (text) => {
   }
   console.log(newArr);
 };
-onSearch('k');
+
+onSearch("f");
+
+let str = "wba";
+for (let i = 0; i < str.length; i++) {
+  console.log(str);
+}

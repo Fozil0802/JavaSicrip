@@ -63,5 +63,7 @@ console.log(arr4.reverse());
 
 console.log(typeof arr5.split('').reverse().join());
 
-let num = 123456789;
-console.log(typeof num.toString().split('').reverse().join(''));
+let arr = [123456789];
+console.log(+arr.toString().split('').reverse().join(''));
+
+
