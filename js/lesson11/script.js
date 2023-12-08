@@ -143,3 +143,125 @@ let arr2 = ["Fozil", "Okhunjon", "Jaloliddin", "Utkirbek"];
 // console.log(cars);
 
 // const onCreate = (cars) => {};
+
+
+// Array advanced part
+
+// sort by number
+
+// let arr = [2, 4, 1, 5,  1000, 3, 100, 100, 20,];
+
+// console.log(arr.sort((a, b) => a - b));
+// console.log(arr.sort((a, b) => b - a));
+
+// console.log(arr.sort((a, b) => {
+//     return a - b
+// } ));
+
+// console.log(arr.sort(function (a, b) {
+//     return a - b
+// }));
+
+
+// sort by letter
+
+// let arr = ['c', 'b', 'a', 'd', 'A', 'C', 'B'];
+
+// console.log(arr.sort((birinchi, ikkinchi) => birinchi.localeCompare(ikkinchi)));
+// console.log(arr.sort((birinchi, ikkinchi) => ikkinchi.localeCompare(birinchi)));
+// console.log(arr.sort((a, b) => a - b));
+
+// ////////////////////////////////////
+
+// let str = 'WBA';
+
+// terminal => ABW
+
+// let toArray = str.split('');
+// let toReverse = toArray.reverse();
+// let toString = toReverse.join("");
+
+// let general = str.split("").reverse().join("");
+
+// console.log(general);
+
+// //////////////////////////////
+
+// let num = 21543723;
+
+// console.log( typeof +num.toString().split("").sort().join(""));
+
+// /////////////////////////////////////////////////////////////////////
+
+// map()
+
+// let arr = ['Foziljon', 'Mirshakar', 'Jaloliddin'];
+
+// arr.map(function(){})
+
+// arr.map((value, index, array) => {
+//     // console.log(qiymat);
+//     // console.log(index);
+//     // console.log(array);
+// })
+
+// let str = 'WBA';
+
+// for (let i = 0; i < str.length; i++){
+//     console.log(str[i]);
+//     console.log(i);
+//     console.log(str);
+// }
+
+// str[i] = value
+// i = index
+// str = array
+
+// //////////////////
+
+// forEach()
+// let arr = ['Foziljon', 'Mirshakar', 'Jaloliddin'];
+
+// arr.forEach((value, index, array) => {
+//     console.log(value);
+//     console.log(index);
+//     console.log(array);
+// })
+
+// ////////////////////////////////
+// map() vs forEach()
+
+// let arr = ['Foziljon', 'Mirshakar', 'Jaloliddin'];
+
+// let newArr = arr.map((value, index) => {
+//     return 'Hello World!'
+// })
+
+// let newArr = arr.forEach((value, index) => {
+//     // console.log(value);
+// })
+
+// console.log(newArr);
+
+// /////////////////////////////////////////
+
+// filter()
+
+// let arr = [20, 10, 35, 60, 73, 85];
+// let arr = ['Foziljon', 'Mirshakar', 'Jaloliddin'];
+
+
+// let filtered = arr.filter((value, index) => value !== 'Foziljon');
+// console.log(filtered);
+
+// let filtered = arr.filter((value, index) => value < 50);
+
+// let newArr = [];
+// arr.map((value) => {
+//     if (value < 50) {
+//         // console.log(value);
+//         newArr.push(value)
+//     }
+// })
+
+// console.log(newArr);

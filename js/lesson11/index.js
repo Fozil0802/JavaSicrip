@@ -45,5 +45,5 @@ let flatting = arr1.flat(Infinity);
 let sum = flatting.reduce((initial, total) => initial + +total, 0)
 console.log(sum);
 
-// 3-masala
+
 
