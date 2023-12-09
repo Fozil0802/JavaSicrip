@@ -14,6 +14,17 @@ function evenOrOdd(number) {
 }
 console.log(evenOrOdd);
 
+let arr = [1, -4, 7, 12];
+let newsum = 0;
+function positiveSum(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+        newsum += arr[i];
+      }
+    }
+    console.log(newsum);
+}
+positiveSum(arr)
 
 
 
