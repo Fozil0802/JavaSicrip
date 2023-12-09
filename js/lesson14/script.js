@@ -93,31 +93,49 @@ const person = {
   firstName: "Fozil",
   lastName: "Khudpyberdiev",
 
-  get fullName(){
-return `${person.firstName} ${this.lastName}`
+  get fullName() {
+    return `${person.firstName} ${this.lastName}`;
   },
 
-  set fullName(value){
-    const values = value.split(' ');
+  set fullName(value) {
+    const values = value.split(" ");
     this.firstName = values[0];
-    this.lastName = values[1]
-  }
+    this.lastName = values[1];
+  },
 };
-person.fullName ='Sirojiddin Tangirov'
+person.fullName = "Sirojiddin Tangirov";
 console.log(person.fullName);
 
 // curry function
 
+function sendRequest(greet) {
+  return function (name) {
+    return function (message) {
+      console.log(`${greet} ${name} ${message}`);
+    };
+  };
+}
+sendRequest('salom')('Fozil')('qayerdasiz');
+
 // const addition = (a, b, c) => {
-//     return a + b + c 
+//     return a + b + c
 // }
 // console.log(addition(2, 3, 4));
 
 const addition = (a) => {
-    return (b) => {
-        return (c) => {
-            return a + b + c
-        }
-    }
-}
+  return (b) => {
+    return (c) => {
+      return a + b + c;
+    };
+  };
+};
 console.log(addition(2)(3)(4));
+
+function recurse(number) {
+  console.log(number);
+  let newNumber = number - 1;
+  if (newNumber > 0) {
+    recurse(newNumber);
+  }
+}
+recurse(10);
