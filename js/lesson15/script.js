@@ -25,16 +25,16 @@
 
 // prototype
 
-const user = {
-  firstname: "Fozil",
-  lastname: "Khudoyberdiev",
-  greeting() {
-    console.log("hello");
-  },
-};
+// const user = {
+//   firstname: "Fozil",
+//   lastname: "Khudoyberdiev",
+//   greeting() {
+//     console.log("hello");
+//   },
+// };
 
 // const num = 10;
-const num = new Number(100);
+// const num = new Number(100);
 
 // const str = 'example';
 
@@ -56,3 +56,29 @@ const num = new Number(100);
 // }
 
 // console.log(user2.example())
+
+// OOP => object oriented programming
+// PP => functional programming
+// class => ES6da qo'shilgan
+
+// function User(name) {
+//   this.name = name;
+// }
+// let user = new User('Fozil')
+
+// console.log(user.name);
+// console.log(typeof user);
+
+class User {
+
+  constructor(name){
+this.name = name;
+  }
+  greeting(){
+    console.log(this.name);
+
+  }
+}
+let user = new User('Fozil');
+
+user.greeting();
