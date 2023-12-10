@@ -69,16 +69,44 @@
 // console.log(user.name);
 // console.log(typeof user);
 
-class User {
+// class User {
 
-  constructor(name){
-this.name = name;
+//   constructor(name){
+// this.name = name;
+//   }
+//   greeting(){
+//     console.log(this.name);
+
+//   }
+// }
+// let user = new User('Fozil');
+
+// user.greeting();
+
+class mashina {
+
+  constructor(color, name, price){
+
+    this.color = color;
+    this.name = name;
+    this.price = price;
   }
-  greeting(){
-    console.log(this.name);
-
+  newinfo(){
+    console.log(`${this.color} ${this.name} ${this.price}`);
   }
 }
-let user = new User('Fozil');
+const mashina1 = new mashina('qora', 'jentra', '15000$')
+const mashina2 = new mashina('oq', 'spark', '10000$')
+const mashina3 = new mashina('qaymoq', 'malibu', '20000$')
+const mashina4 = new mashina('sariq', 'matiz', '5000$')
 
-user.greeting();
+mashina1.newinfo();
+mashina2.newinfo();
+mashina3.newinfo();
+mashina4.newinfo();
+console.log(typeof mashina1);
+// class =>  object yaratish uchun template(shablon) hisoblanadi, reusable object yaratib beradi
+// conctructor => classni parametirlarini uz ichiga oladi
+// this.color = color; ...
+
+
