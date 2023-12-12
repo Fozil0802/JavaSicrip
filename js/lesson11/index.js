@@ -21,29 +21,39 @@ let cars = [
 
 const onDelete = (ids) => {
   let filtered = cars.filter((value) => value.id !== ids);
-//   cars = filtered;
-console.log(filtered);
+  //   cars = filtered;
+  console.log(filtered);
 };
 
 // console.log(filtering);
 // console.log(sorting);
-onDelete(5)
+onDelete(5);
 // // console.log(cars);
 
 // 2-masala
 let arr = [25, 30, 70, 85, 40, 5, 95];
 
 let min = arr.sort((a, b) => a - b)[0];
-let max = arr.sort((a,b) => a - b).slice(-1);
+let max = arr.sort((a, b) => a - b).slice(-1);
 console.log(min);
 
-let obj = "min"
+let obj = "min";
 // 3-masala
 
-let arr1 = [1, [3, [5]],[10]];
+let arr1 = [1, [3, [5]], [10]];
 let flatting = arr1.flat(Infinity);
-let sum = flatting.reduce((initial, total) => initial + +total, 0)
+let sum = flatting.reduce((initial, total) => initial + +total, 0);
 console.log(sum);
 
+// 4 -masala
 
+let str = "ABBACC";
 
+let arr2 = [];
+
+for (let i = 6; i > str.length; i--) {
+  if (arr2.includes(str[i])) {
+    console.log(str[i]); break
+  }
+  arr2.push(str[i]);
+}
