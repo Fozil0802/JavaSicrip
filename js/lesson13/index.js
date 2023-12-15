@@ -11,7 +11,7 @@
 
 // // 2-masala
 
-let arr1 = [4, 10, 88, 99, 100];
+let arr1 = [4, 10, 88, 99, 120, 77, 111];
 
 let min = arr1.sort((a, b) => a - b)[0];
 let max = +arr1
