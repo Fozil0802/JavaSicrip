@@ -16,13 +16,11 @@
 
 // console.log(person);
 
-
 // //array
 
 // let arr = ['mishka', 'tel'];
 // arr[0]= 'decktop'
 // console.log(arr);
-
 
 // let x = 12;
 // let y = 6;
@@ -56,18 +54,17 @@
 
 //foor loop
 
- //first
+//first
 //  for( let i =0; i < 10; i++){
 // console.log(i)
 //  }
 
- //second
+//second
 
 // let i = 0;
 // do{
 // console.log(i);
 // }while(i < 10)
-
 
 // third
 
@@ -106,3 +103,74 @@
 //     i++
 // }
 // console.log(aneswes);
+
+// if/else
+
+// let age = prompt('yoshingiz nechida?')
+
+// let age = 5;
+// if(age <18){
+//     console.log('hali vahtli');
+// }else if(age> 60){
+//     console.log('kech qoldiz');
+// }else{
+// console.log('hush kelibsiz');
+// }
+
+// switch (age) {
+//   case '28':
+//     alert("sizni yoshingiz 28da");
+//     break;
+//   case '55':
+//     alert("sizni yoshingiz 55da");
+//     break;
+//     default:
+//       alert('yoshingiz nomalum');
+// }
+
+// function
+
+// myFirstfunction('fozil')
+// myFirstfunction('okhunjon')
+// myFirstfunction('sardor')
+// // function decloration
+
+// function myFirstfunction(name) {
+//   console.log(`hi my name is ${name}`);
+// }
+
+// myFirstfunction('fozil')
+// myFirstfunction('okhunjon')
+// myFirstfunction('sardor')
+
+// let num = 5;
+
+// function myfirst(name) {
+//   let num = 10;
+//   num++;
+//   console.log(num);
+//   console.log(`hi my name is ${name}`);
+// }
+// myfirst("fozil");
+// console.log(num);
+
+// function expression
+
+// myFunc()  Cannot access 'myFunc' before initialization
+// let myFunc = function () {
+//     console.log('my hobbi IT');
+// }
+// myFunc()
+
+// function myFirstApp(name, age) {
+//   alert(`hi my nam is ${name} and i am frontend developer`);
+
+//   function showSkils() {
+//     let skills = ["html", "css", "javascript"];
+//     for(let i = 0; i < skills.length; i++){
+//         alert(`you have skills ${skills[i]}`);
+//     }
+//   }
+// }
+
+// showSkils();
