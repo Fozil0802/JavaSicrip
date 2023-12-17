@@ -24,9 +24,8 @@ function positiveSum(arr) {
     }
     console.log(newsum);
 }
+
 positiveSum(arr)
-
-
 
 
 

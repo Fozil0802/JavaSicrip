@@ -174,3 +174,44 @@
 // }
 
 // showSkils();
+
+
+// DOOM
+
+let chooseBtn = document.getElementById('choose')
+reseiveBtn = document.getElementById('receive')
+contactForm = document.getElementById('contactform_name')[0]
+text = document.getElementsByTagName('h2')[0]
+modal = document.querySelector('.modal')
+btn = document.querySelectorAll('.main_tel_title')[0]
+closeBtn =document.querySelector('.close');
+message = document.getElementsByTagName('message')[0]
+
+// first => no
+function hover(){
+    text.textContent = 'tugadi'
+}
+
+// second => no
+
+text.onmouseenter = hover
+
+// thirt
+
+text.addEventListener('mouseenter',hover)
+text.addEventListener('mouseenter', function(){
+    text.textContent = 'tugadi'
+})
+
+receiveBtn.addEventListener(function(){
+    modal.style.display = 'block'
+})
+
+closeBtn.addEventListener(function(){
+    modala.style.display = 'none'
+})
+
+contactForm.addEventListener('input', function() {
+    message.value =`mening ismim ${contactForm.value} `
+})
+
