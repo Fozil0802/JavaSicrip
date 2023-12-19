@@ -13,7 +13,7 @@ function evenOrOdd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
 }
 console.log(evenOrOdd);
-
+//  3-masala
 let arr = [1, -4, 7, 12];
 let newsum = 0;
 function positiveSum(arr) {
@@ -27,7 +27,13 @@ function positiveSum(arr) {
 
 positiveSum(arr)
 
+// 4-masala
 
+let str = 'world'
 
+function solution(str){
+  return str.split('').reverse().join('');  
+}
 
+solution(str)
 

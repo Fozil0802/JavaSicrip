@@ -31,3 +31,5 @@ deleteMeva("nok");
 console.log(arr);
 
 
+
+
