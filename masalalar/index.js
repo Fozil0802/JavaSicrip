@@ -8,32 +8,34 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // juft va toq son
-
+ let num= 15; 
 function evenOrOdd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
 }
-console.log(evenOrOdd);
+console.log(evenOrOdd(num));
 //  3-masala
 let arr = [1, -4, 7, 12];
-let newsum = 0;
 function positiveSum(arr) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] > 0) {
-        newsum += arr[i];
-      }
+  let newsum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      newsum += arr[i];
     }
-    console.log(newsum);
+  }
+return newsum
 }
 
-positiveSum(arr)
+console.log(positiveSum(arr));
 
 // 4-masala
 
-let str = 'world'
+let str = "world";
 
-function solution(str){
-  return str.split('').reverse().join('');  
+function solution(str) {
+  return str.split("").reverse().join("");
 }
 
-solution(str)
+solution(str); 
 
+
+        
