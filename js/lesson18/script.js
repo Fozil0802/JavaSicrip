@@ -101,6 +101,7 @@ class User3 extends User2 {
     }
 }
 
+
 // let user = new User3("Ohunjon", 'test@gmail.com', 999999, 'Oylik', 25);
 // user.getPackage();
 // user.register();
