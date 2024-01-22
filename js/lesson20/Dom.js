@@ -11,30 +11,37 @@
 
 //////////////////////////////////////////////////////////
 
-// console.log(document.getElementById('title'));
-// console.log(document.getElementById('title').innerHTML);
+// console.log(document.getElementById('title')); titleni qatoridagi elementni to'liq olib keladi
+// console.log(document.getElementById('title').innerHTML); ichida contentni olib kelib beradi
 
-///////////////////////////////////
+/////////////////////////////////////////////////////////
 
 // Js implementation
 
 // const title = document.getElementById('title');
 // const title = document.getElementsByClassName('text');
-// const title = document.getElementsByTagName('h1');
+// const title = document.getElementsByTagName('h1'); //HTMLCollection orqali // ichidagi malumotni olish uchin // title[1].inherHTML // index orqali
 
+// class orqali malumot olsak HTMLCollection orqali arrayni ichida chiqaradi
+// ichidagi malumotni olish uchin // title[1].inherHTML // index orqali kiriladi
+
+// ID orqali malumot olsak faqat birinchi malumotni olib beradi
 ///////////////////////////////////////////////////////
 
 // general => querySelectors.
 
 // querySelector
+// ID = CLASS faqat birinchisini oladi
 // const general = document.querySelector('#title');
 // const general = document.querySelector('.text');
 // const general = document.querySelector('h1');
 
 // querySelectorAll
-// const general = document.querySelectorAll('#title');
-// const general = document.querySelectorAll('.text');
-// const general = document.querySelectorAll('h1');
+
+// const general = document.querySelectorAll('#title');// Nodelist(2)[h1#title, h1#title]
+
+// const general = document.querySelectorAll('.text');// Nodelist(n) prototype:Nodelist
+// const general = document.querySelectorAll('h1');// Nodelist(n)
 
 ////////////////////////////////////////////////////////////
 
@@ -48,6 +55,7 @@
 ////////////////////////////////////////////////////////
 
 // children
+// ol.children => HTMLCollection[ ]
 // const ol = document.querySelector('ol');
 
 // for (let i = 0; i < ol.children.length; i++){
@@ -62,7 +70,7 @@
 // let isActive = true;
 
 // const onChange = () => {
-    
+
 //     isActive ? (
 //       title.style.cssText = `
 //       background: red;
@@ -76,9 +84,7 @@
 //       transition: all 1s linear;
 //     `
 //     )
-    
-//     isActive = !isActive
-// }
+//       isActive = !isActive
+// 
 
 // btn.addEventListener('click', onChange);
-
