@@ -111,3 +111,39 @@ const findsum = (n) => {
   };
   console.log(findsum(8));
   
+  // 13- masala
+let text = "fo zi  l shav kato  vich";
+
+function noSpace() {
+  return text.replace(/\s/g, "");
+}
+
+console.log(noSpace(text));
+
+// 14-masala
+
+function finder() {
+  let args = [5, 3, 7, 27, 9];
+  return Math.min(...args);
+}
+console.log(finder());
+
+// 15-masala
+
+// function countSheeps(arrayOfSheep) {
+//   var sheepCounter = 0;
+
+//   for (var i = 0; i < arrayOfSheep.length; i++) {
+//     if (arrayOfSheep[i] === true) {
+//       sheepCounter++;
+//     }
+//   }
+
+//   return sheepCounter;
+// }
+// console.log(countSheeps());
+// 2-usul
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
+// console.log(countSheeps());
