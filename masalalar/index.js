@@ -147,3 +147,91 @@ console.log(finder());
 //   return arrayOfSheeps.filter(Boolean).length;
 // }
 // console.log(countSheeps());
+
+// 16-masala
+
+// Examples(Operator, value1, value2) --> output
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
+
+function basicOp(operation, value1, value2) {
+  // Code
+  let result = 0;
+  switch (operation) {
+    case "+":
+      result = value1 + value2;
+      break;
+    case "-":
+      result = value1 - value2;
+      break;
+    case "*":
+      result = value1 * value2;
+      break;
+    case "/":
+      result = value1 / value2;
+      break;
+    default:
+      return "not a valid operator";
+      break;
+  }
+  return result;
+}
+
+console.log(basicOp());
+
+// 17-Masala
+
+let year = 2101;
+
+function century(year) {
+  // 1-usul
+  //   let centuryCount = 0;
+  // while (year > 0){
+  //   year = year - 100;
+  //   centuryCount = centuryCount + 1;
+  // }
+  // return centuryCount;
+  // 2-usul
+  return Math.ceil(year / 100);
+}
+console.log(century(year));
+
+// 18-maslala
+
+// time 3=> liter= 1
+// time 6.7=> liter= 3
+
+let time = 3;
+
+function litres(time) {
+  return Math.floor(time / 2);
+  // Math.floor(time*0.5)
+}
+
+console.log(litres(time));
+
+// 19-masala
+
+let n = 12345;
+
+function digitize(n) {
+  return n.toString().split("").reverse().map(Number);
+}
+console.log(digitize(n));
+
+// 20-masala
+
+let num1 = 12;
+/*n sonining ikkita x VA y soniga bo‘linishini tekshiradigan isDivisible(n, x, y) funksiyasini yarating.
+Barcha kirishlar ijobiy, nolga teng bo'lmagan raqam.
+Example:
+isDivisible(3,1,3)--> true because 3 is divisible by 1 and 3
+isDivisible(12,2,6)--> true because 12 is divisible by 2 and 6
+isDivisible(100,5,3)--> false because 100 is not divisible by 3
+isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5*/
+
+function isDivisible(n, x, y) {
+  return n % x == 0 && n % y == 0 ? true : false;
+}
