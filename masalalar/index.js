@@ -342,3 +342,65 @@ console.log(booleanToString());
 // function booleanToString(b){
 //   return b.toString();
 // }
+
+// 26-masala
+
+// function areYouPlayingBanjo(name) {
+//   if (name[0] === 'R' || name[0] === 'r') {
+//    return `${name} plays banjo`;
+//  } else {
+//    return `${name} does not play banjo`;
+//  }
+// }
+// console.log(areYouPlayingBanjo());
+
+// 27-masala
+
+h = 0;
+m = 1;
+s = 1;
+// 1-usul
+function past(h, m, s) {
+  return (h * 3600 + m * 60 + s) * 1000;
+}
+// /2-usul
+function past(h, m, s) {
+  //#Happy Coding! ^_^
+  let secondsToMillisec = s * 1000;
+  let minutesToMillisec = m * 60000;
+  let hoursToMillisec = h * 3600000;
+
+  return secondsToMillisec + minutesToMillisec + hoursToMillisec;
+}
+console.log(past(h, m, s));
+
+// 28=masala
+
+let arr2 = [5, 10, 15, 20, 30];
+
+let find_average = (array) => {
+  return array.length === 0
+    ? 0
+    : array.reduce((acc, ind) => acc + ind, 0) / array.length;
+};
+console.log(find_average(arr2));
+
+// 29-masala
+// 1-usul
+
+// function betterThanAverage(classPoints, yourPoints) {
+//   // Your code here
+//   return (
+//     yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
+//   );
+// }
+
+// 2-usul
+// function betterThanAverage(classPoints, yourPoints) {
+//   const classPointsSum = classPoints.reduce((a, b) => a + b, 0);
+//   const classAverage = classPointsSum / classPoints.length;
+//   const isBetter = yourPoints > classAverage;
+//   return isBetter;
+// }
+// console.log(betterThanAverage());
+
