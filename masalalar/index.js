@@ -235,3 +235,110 @@ isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5*/
 function isDivisible(n, x, y) {
   return n % x == 0 && n % y == 0 ? true : false;
 }
+// 21-masala
+let name = "Fozil";
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet(name));
+
+// 22-masala
+
+function greet() {
+  return "hello world!";
+}
+console.log(greet());
+
+// 23-masala
+// 1-usul
+let arr = ["hay", "junk", "hay", "moreJunk", "needle", "randomJunk"];
+
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
+
+console.log(findNeedle(arr));
+
+// 2-usul
+
+function findNeedle(haystack) {
+  // your code here
+  for (i = 0; i < haystack.length; i++) {
+    if (haystack[i] === "needle") {
+      return "found the needle at position " + i;
+    }
+  }
+}
+
+console.log(findNeedle(arr));
+
+// 24-masala
+
+function lovePetals(flower1, flower2) {
+  if (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(lovePetals(1, 4));
+
+// 23-masala
+
+let arr1 = [1, 2, 3, 4, 5];
+
+function maps(x) {
+  let newArr = [];
+  for (let i = 0; i < x.length; i++) {
+    newArr.push(x[i] * 2);
+  }
+  return newArr;
+}
+
+// 2-usul
+
+function maps(x) {
+  return x.map((n) => n * 2);
+}
+console.log(maps(arr1));
+
+// 24-masala
+
+// 1-usul
+function paperwork(n, m) {
+  if (n < 0 || m < 0) {
+    return 0;
+  } else {
+    return n * m;
+  }
+}
+
+// 2-usul
+function paperwork(n, m) {
+  return n > 0 && m > 0 ? n * m : 0;
+}
+console.log(paperwork(-5, 2));
+
+// 25-masala
+
+function booleanToString(b) {
+  //your code here
+  if (b) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(booleanToString());
+
+// function booleanToString(b){
+//   return b ? 'true' : 'false';
+// }
+
+// function booleanToString(b){
+//   return b.toString();
+// }
