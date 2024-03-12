@@ -404,3 +404,59 @@ console.log(find_average(arr2));
 // }
 // console.log(betterThanAverage());
 
+// 30-masala Sum Arrays
+// 1-usul
+
+// function sum(numbers) {
+//   return numbers.reduce((a, b) => a + b, 0);
+// }
+// 2-usul
+// Sum Numbers
+// sum = function (numbers) {
+//   "use strict";
+//   return numbers.reduce(function(t, n){
+//     return t + n;
+//   }, 0);
+// };
+// console.log(sum());
+
+// 31-masala Invert values
+// sonni teskarisini chiqarish
+
+// function invert(array) {
+//       return array.map(num => num * -1);
+// }
+
+// console.log(invert(15));
+
+// 32-masala //Simple multiplication
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+}
+console.log(simpleMultiplication(2));
+
+// 33-masala //Count of positives / sum of negatives
+let input = [1, 2, 3, 4, 5, 6, 20, 7, 8, 9, 10, -11, -12, -13, -14, -25];
+function countPositivesSumNegatives(input) {
+  // your code here
+  let positiveNums = 0;
+  let negativeNums = 0;
+  if (input === null || input.length === 0) {
+    return [];
+  } else {
+    input.forEach((num) => (num > 0 ? positiveNums++ : (negativeNums += num)));
+  }
+  return [positiveNums, negativeNums];
+}
+console.log(countPositivesSumNegatives(input));
+
+// 34-masala //You only need one - Beginner
+
+// function check(a, x) {
+//   // your code here
+//   return a.includes(x) ? true : false;
+// }
+// console.log(check());
+
+
