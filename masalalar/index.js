@@ -459,4 +459,98 @@ console.log(countPositivesSumNegatives(input));
 // }
 // console.log(check());
 
+// 35-masala
+//1-usul
+// function fakeBin(x){
+//   // x = x.split('');
+
+//   let toBinary = x => {
+//     if (x < 5)
+//       return 0;
+//     else return 1
+//   }
+
+//   return x.map(toBinary).join('');
+// }
+// console.log(fakeBin());
+// // 2-usul
+// function fakeBin(x) {
+//   return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
+
+// 36-masala
+
+function bmi(weight, height) {
+  let bmi = weight / height ** 2;
+  if (bmi <= 18.5) {
+    return "Underweight";
+  } else if (bmi <= 25.0) {
+    return "Normal";
+  } else if (bmi <= 30.0) {
+    return "Overweight";
+  } else if (bmi > 30) {
+    return "Obese";
+  }
+}
+console.log(bmi(5, 20));
+
+// 37-masala
+
+function grow(x) {
+  let num = 1;
+  for (let i = 0; i < x.length; i++) {
+    num *= x[i];
+  }
+  return num;
+}
+console.log(grow([1, 2, 3]));
+
+// 36-masala //MakeUpperCase
+
+function makeUpperCase(str) {
+  // Code here
+  return str.toUpperCase();
+}
+console.log(makeUpperCase("fozil"));
+
+// 37-masala //Reversed sequence
+
+const reverseSeq = (n) => {
+  if (n < 1) {
+    return [];
+  } else {
+    const curArray = [n];
+    const recursed = reverseSeq(n - 1);
+    return curArray.concat(recursed);
+  }
+};
+console.log(reverseSeq(7));
+
+// 38-masala // Is he gonna survive?
+
+// function hero(bullets, dragons){
+// //Get Coding!
+//    return bullets >= (2 * dragons);
+
+// }
+
+function hero(bullets, dragons) {
+  //Get Coding!
+  return (bullets = 2 * dragons ? true : false);
+}
+
+console.log(hero(10, 10));
+
+// 39-masala // Sentence Smash
+
+function smash(words) {
+  if (words.length === 0) {
+    return "";
+  } else {
+    return words.join(" ");
+  }
+}
+
+console.log(smash(["fozil", "shavkatovich"]));
+
 
