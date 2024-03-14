@@ -553,4 +553,180 @@ function smash(words) {
 
 console.log(smash(["fozil", "shavkatovich"]));
 
+// 40-masala // Will you make it?
 
+// 1-masala
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  let ourDistance = mpg * fuelLeft;
+  if (ourDistance >= distanceToPump) {
+    return true;
+  } else {
+    return false;
+  }
+};
+// 2-masala
+const zeroFuell = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump;
+};
+console.log(zeroFuell(50, 25, 2));
+
+// 41-masala
+
+// 1-usul
+// function countBy(x, n) {
+
+//  return [...Array(n)].map((_, i) => x * ++i);
+
+// }
+// 2-usul //Count by X
+
+function countBy(x, n) {
+  var z = [];
+  for (i = 1; i <= n; i++) {
+    z.push(x * i);
+  }
+  return z;
+}
+console.log(countBy(3, 15));
+
+// 42-masala //DNA to RNA Conversion
+
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+  let array = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] == "T") {
+      array += "U";
+    } else {
+      array += dna[i];
+    }
+  }
+  return array;
+}
+
+console.log(DNAtoRNA("TFOZILT"));
+
+// 43-masala // If you can't sleep, just count sheep!!
+
+var countSheep = function (num) {
+  //your code here
+  let str = "";
+  for (let i = 1; i <= num; i++) {
+    str += `${i} sheep...`;
+  }
+  return str;
+};
+
+console.log(countSheep());
+
+// 44-masala // Grasshopper - Grade book
+
+function getGrade(s1, s2, s3) {
+  // Code here
+  var score = (s1 + s2 + s3) / 3;
+  if (score >= 90 && score <= 100) {
+    return "A";
+  } else if (score >= 80 && score < 90) {
+    return "B";
+  } else if (score >= 70 && score < 80) {
+    return "C";
+  } else if (score >= 60 && score < 70) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+console.log(getGrade(50, 90, 70));
+
+// 45-masala //Sum without highest and lowest number
+
+function sumArray(array) {
+  if (array == null) {
+    return 0;
+  } else if (array.lenght < 3) {
+    return 0;
+  } else {
+    array.sort(function (a, b) {
+      return a - b;
+    });
+    array.pop();
+    array.shift();
+    let sum = 0;
+    for (i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+    return sum;
+  }
+}
+console.log(sumArray([-6, 20, -1, 10, -12]));
+
+// 46-masala //Area or Perimeter
+//1-usul
+const areaOrPerimeter1 = function (l, w) {
+  return l == w ? l * w : 2 * (l + w);
+};
+
+//2-usul
+
+const areaOrPerimeter = function (l, w) {
+  if (l == w) {
+    return l * w;
+  } else {
+    return 2 * (l + w);
+  }
+};
+
+// 47-masala // Grasshopper - Personalized Message
+
+// 1-usul
+
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
+
+// 2-usul
+function greet(name, owner) {
+  // Add code here
+  if (name == owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
+
+// 48-masala //The Feast of Many Beasts
+// 1-usul
+function feast(beast, dish) {
+  return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1);
+}
+
+// 2-usul
+
+function feast(beast, dish) {
+  //your function here
+  const b1 = beast[0];
+  const b2 = beast[beast.length - 1];
+  const d1 = dish[0];
+  const d2 = dish[dish.length - 1];
+
+  return b1 === d1 && b2 === d2 ? true : false;
+}
+
+// 49-masala // Count the Monkeys!
+
+// 1-usul
+function monkeyCount(n) {
+  return Array.from({ length: n }, (_, i) => i + 1);
+}
+
+// 2-usul
+
+function monkeyCount(n) {
+  // your code here
+  var monkey = [];
+  for (i = 1; i <= n; i++) {
+    monkey.push(i);
+  }
+  return monkey;
+}
