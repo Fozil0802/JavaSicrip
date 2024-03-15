@@ -730,3 +730,99 @@ function monkeyCount(n) {
   }
   return monkey;
 }
+
+// 50-masala // Thinkful - Logic Drills: Traffic light
+
+function updateLight(current) {
+  //your code here!
+  var colors = ["green", "yellow", "red"];
+  if (colors.indexOf(current) == 2) {
+    return colors[0];
+  } else {
+    return colors[colors.indexOf(current) + 1];
+  }
+}
+
+// 51-masala //Set Alarm
+
+// 1-usul
+
+function setAlarm(employed, vacation) {
+  return employed && !vacation ? true : false;
+}
+
+// 2-usul
+
+function setAlarm(employed, vacation) {
+  return employed > vacation;
+}
+
+console.log(setAlarm());
+
+//53-masala// Do I get a bonus?
+
+// 1-usul
+
+function bonusTime(salary, bonus) {
+  // your code here
+  return `£${bonus ? salary * 10 : salary}`;
+}
+
+// 2-usul
+
+// function bonusTime(salary, bonus)
+// {
+//   if(bonus)
+//   {
+//     return "£" + (salary*10).toString();
+//   }
+//   return "£" + salary.toString();
+// }
+// console.log(bonusTime());
+
+// 54-masala //Get Planet Name By ID
+// 1-ususl
+
+function getPlanetName(id) {
+  var name;
+  switch (id) {
+    case 1:
+      name = "Mercury";
+      break;
+    case 2:
+      name = "Venus";
+      break;
+    case 3:
+      name = "Earth";
+      break;
+    case 4:
+      name = "Mars";
+      break;
+    case 5:
+      name = "Jupiter";
+      break;
+    case 6:
+      name = "Saturn";
+      break;
+    case 7:
+      name = "Uranus";
+      break;
+    case 8:
+      name = "Neptune";
+  }
+
+  return name;
+}
+// 2-usul
+function getPlanetName(id) {
+  return {
+    1: "Mercury",
+    2: "Venus",
+    3: "Earth",
+    4: "Mars",
+    5: "Jupiter",
+    6: "Saturn",
+    7: "Uranus",
+    8: "Neptune",
+  }[id];
+}
