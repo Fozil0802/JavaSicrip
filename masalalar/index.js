@@ -925,3 +925,84 @@ function otherAngle(a, b) {
     return 0;
   return 180 - a - b; //return missing angle
 }
+
+// 60-masala //Beginner Series #4 Cockroach
+
+// 1-usul
+function cockroachSpeed(s) {
+  //Good Luck!
+  return Math.floor(s * 27.7778);
+}
+
+// 2-usul
+function cockroachSpeed(s) {
+  const secsInHour = 3600;
+  const centimetersInKilometers = 100000;
+
+  return Math.floor((s * centimetersInKilometers) / secsInHour);
+}
+
+// 61-masala //Quarter of the year
+
+// 1-usul
+
+const quarterOf = (month) => {
+  // Your code here
+  if (month <= 3) {
+    return 1;
+  } else if (6 >= month && month > 3) {
+    return 2;
+  } else if (9 >= month && month > 6) {
+    return 3;
+  } else if (12 >= month && month > 9) {
+    return 4;
+  }
+};
+
+// 2-usul
+function quarterOf(month) {
+  return Math.ceil(month / 3);
+}
+
+// 62-masala //Volume of a Cuboid
+// 1-usul
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length * width * height;
+  }
+}
+// 2-usul
+var Kata = (() => {
+  this.getVolumeOfCuboid = (l, w, h) => l * w * h;
+  return this;
+})();
+
+// 63-masala //Remove exclamation marks
+
+// 1-usul
+function removeExclamatonMarks(s) {
+  return s.split("!").join("");
+}
+// 2-usul
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, "");
+}
+
+// 64-masala //Grasshopper - Check for factor
+// 1-usul
+
+function checkForFactor(base, factor) {
+  if (Number.isInteger(base / factor)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// 2-usul
+
+function checkForFactor(base, factor) {
+  return !(base % factor);
+}
+console.log(checkForFactor());
