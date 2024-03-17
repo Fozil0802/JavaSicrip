@@ -8,7 +8,7 @@
 // }
 
 // // juft va toq son
-//  let num= 15; 
+//  let num= 15;
 // function evenOrOdd(number) {
 //   return number % 2 === 0 ? "Even" : "Odd";
 // }
@@ -35,7 +35,7 @@
 //   return str.split("").reverse().join("");
 // }
 
-// solution(str); 
+// solution(str);
 
 // // 5-masala
 
@@ -103,15 +103,15 @@ console.log(squareSum(numbers));
 // 12-masala
 
 const findsum = (n) => {
-    let sum = 0;
-    for (let i = 1; i <= n; i++) {
-      sum += i;
-    }
-    return sum;
-  };
-  console.log(findsum(8));
-  
-  // 13- masala
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+};
+console.log(findsum(8));
+
+// 13- masala
 let text = "fo zi  l shav kato  vich";
 
 function noSpace() {
@@ -825,4 +825,103 @@ function getPlanetName(id) {
     7: "Uranus",
     8: "Neptune",
   }[id];
+}
+
+// 55-masala // Find the first non-consecutive number
+// 1-usul
+function firstNonConsecutive(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i - 1] + 1 !== arr[i]) return arr[i];
+  }
+  return null;
+}
+
+// 2-usul
+
+// function firstNonConsecutive (arr) {
+//   let result = arr.find((val, index) => val !== index + arr[0]);
+
+//   return (Number.isInteger(result)) ? result : null;
+// }
+
+// console.log(firstNonConsecutive());
+
+// 56-masala //Twice as old
+
+//1-usul
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  let twice = dadYearsOld - sonYearsOld * 2;
+  return twice < 0 ? twice * -1 : twice;
+}
+
+// 2-usul
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+// 3-usul
+function twiceAsOld(a, b) {
+  return a > 2 * b ? a - 2 * b : 2 * b - a;
+}
+
+console.log(twiceAsOld());
+
+// 57-masala //  #18
+
+//1-usul
+function strCount(str, letter) {
+  //code here
+  var letter_Count = 0;
+  for (var position = 0; position < str.length; position++) {
+    if (str.charAt(position) == letter) {
+      letter_Count += 1;
+    }
+  }
+  return letter_Count;
+}
+
+// 2-usul
+function strCount(str, letter) {
+  return str.split("").filter((c) => c == letter).length;
+}
+console.log(strCount("hello", "l"));
+
+// 58-masala //Will there be enough space?
+
+// 1-usul
+function enough(cap, on, wait) {
+  // your code here
+  let total = on + wait;
+  if (total <= cap) {
+    return 0;
+  } else {
+    return total - cap;
+  }
+}
+
+// 2-usul
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
+
+console.log(enough());
+
+// 59-masala// Third Angle of a Triangle
+
+//1-usul
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
+
+// 2-usul
+
+function otherAngle(a, b) {
+  if (a < 0 || b < 0)
+    //ensure no negative angles
+    return 0;
+  if (a + b >= 180)
+    //ensure 2 angles don't sum up to 180
+    return 0;
+  return 180 - a - b; //return missing angle
 }
