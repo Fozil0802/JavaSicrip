@@ -1006,3 +1006,154 @@ function checkForFactor(base, factor) {
   return !(base % factor);
 }
 console.log(checkForFactor());
+
+// 65-masala //Correct the mistakes of the character recognition software
+// 1-usul
+function correct(string) {
+  // your code here
+  return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
+}
+
+// 2-usul
+function correct(s) {
+  s = s.split("");
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] === "5") s[i] = "S";
+    else if (s[i] === "0") s[i] = "O";
+    else if (s[i] === "1") s[i] = "I";
+  }
+  return s.join("");
+}
+console.log(correct());
+
+// 66-masala // Switch it Up!
+
+// 1-usul
+function switchItUp(number) {
+  //Write your own Code!
+  return [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten",
+  ][number];
+}
+// 2-usul
+function switchItUp(number) {
+  switch (number) {
+    case 0:
+      return "Zero";
+    case 1:
+      return "One";
+    case 2:
+      return "Two";
+    case 3:
+      return "Three";
+    case 4:
+      return "Four";
+    case 5:
+      return "Five";
+    case 6:
+      return "Six";
+    case 7:
+      return "Seven";
+    case 8:
+      return "Eight";
+    case 9:
+      return "Nine";
+  }
+}
+
+console.log(switchItUp());
+
+// 67-masala //Parse nice int from char problem
+
+// 1-usul
+function getAge(inputString) {
+  // return the girl's correct age as an integer. Happy coding :)
+  return parseInt(inputString);
+  //  return +inputString[0];
+}
+// 2-usul
+function getAge(inputString) {
+  switch (inputString) {
+    case "1 years old":
+      return 1;
+    case "2 years old":
+      return 2;
+    case "3 years old":
+      return 3;
+    case "4 years old":
+      return 4;
+    case "5 years old":
+      return 5;
+    case "6 years old":
+      return 6;
+    case "7 years old":
+      return 7;
+    case "8 years old":
+      return 8;
+    case "9 years old":
+      return 9;
+    default:
+      return 1;
+  }
+}
+
+console.log(getAge());
+
+// 68-masala //Cat years, Dog years
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
+   let catYears = 0;
+  let dogYears = 0;
+  
+  for(let i = 1; i < humanYears.length; i++){
+    if (humanYears === 1) {
+      catYears = 15;
+      dogYears = 15;
+    } else if (humanYears === 2) {
+      catYears = 24;
+      dogYears = 24;
+    } else if (humanYears >= 3) {
+      catYears += 4;
+      dogYears += 5;
+    }
+  }
+  return [humanYears, catYears, dogYears];
+
+}
+humanYearsCatYearsDogYears();
+
+// 69-masala //is it a palindrome?
+
+//1-usul
+function isPalindrome(x) {
+  // your code here
+   return x.toLowerCase() === x.split("").reverse().join("").toLowerCase();
+}
+//2-usul
+
+function isPalindrome(x) {
+  x = x.toLowerCase()
+  let a = 0
+  let b = x.length
+  while (a < b) {
+    if (x[a] != x[b-1])
+      return false
+    a++
+    b--
+  }
+  return true
+}
+
+isPalindrome();
+
